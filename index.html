@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basement Band</title>
+  <meta name="description" content="A small, local recording room for jamming together. Record audio and MIDI, loop takes, and bring your own VST3 plug-ins.">
+  <meta name="theme-color" content="#191a1e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Basement Band">
+  <meta property="og:description" content="A small, local recording room for jamming together.">
+  <meta property="og:image" content="https://nfmynster.github.io/basementband-site/media/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Basement Band and its green waveform mark">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="media/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="./"><img src="media/icon.svg" width="32" height="32" alt=""> Basement Band</a>
+    <nav aria-label="Page"><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="tagline">
+      <div class="hero-copy">
+        <h1 id="tagline">Plug in.<br> Hit record.<br> <span>Play.</span></h1>
+        <p class="intro">A small, local recording room for jamming together. Built to be easy to use, even if you’ve never recorded before.</p>
+        <div class="downloads" aria-label="Download Basement Band">
+          <a class="download primary" id="download-windows" href="https://github.com/NFMynster/basementbandapp/releases/latest/download/Basement-Band-Setup.exe">Download for Windows</a>
+          <a class="download" id="download-mac" href="https://github.com/NFMynster/basementbandapp/releases/latest/download/Basement-Band-arm64.dmg">Download for Mac</a>
+        </div>
+        <p class="platform-note">Windows 10/11 (x64) · Mac (Apple Silicon) · <a href="#install">Install notes</a></p>
+      </div>
+      <div class="demo">
+        <video controls muted loop playsinline preload="none" poster="media/demo-poster.jpg" width="1920" height="1080" aria-label="Basement Band product demo">
+          <source src="media/basement-band.mp4" type="video/mp4">
+          <a href="media/basement-band.mp4">Watch the Basement Band demo</a>
+        </video>
+      </div>
+    </section>
+
+    <section class="faq wrap" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">A few questions</h2>
+
+      <div class="answers">
+        <div class="answer">
+          <h3>What is it?</h3>
+          <p>A beginner-friendly recorder for jam sessions. Record audio and MIDI with multitrack recording support, loop takes, and bring your own VST3 plug-ins for extra instruments and effects. If you are unfamiliar with VST plugins, plenty are available for free.</p>
+        </div>
+        <div class="answer">
+          <h3>What is it not?</h3>
+          <p>Not a fully fledged DAW, not a glorified asset browser, not a mixing/mastering/equalizing master suite. No logins. No subscriptions. No paywall.</p>
+        </div>
+        <div class="answer">
+          <h3>Why is it free?</h3>
+          <p>Jamming shouldn’t be behind a login or a paywall. GarageBand was always free for me, and I wanted to pass that on. Free forever, no strings attached.</p>
+        </div>
+        <div class="answer" id="install">
+          <h3>Can I run it on my computer?</h3>
+          <dl class="platforms">
+            <div><dt>Windows</dt><dd>Windows 10 or 11 (x64), about 115 MB. The installer is unsigned. If SmartScreen says “Windows protected your PC,” choose <strong>More info</strong>, then <strong>Run anyway</strong>. Updates download in the background and install when you quit or choose “restart to update.”</dd></div>
+            <div><dt>Mac</dt><dd>Apple Silicon (M1 or later), about 130 MB. The installer is signed and notarized. The app tells you when an update is available so you can install it yourself.</dd></div>
+            <div><dt>Linux</dt><dd>No prebuilt package. You can <a href="https://github.com/NFMynster/basementbandapp/blob/main/docs/BUILD.md">build it from source</a>.</dd></div>
+          </dl>
+          <p><a href="https://github.com/NFMynster/basementbandapp/releases">All releases and release notes</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© 2026 Basement Band contributors. Free and open source under <a href="https://github.com/NFMynster/basementbandapp/blob/main/LICENSE">AGPL-3.0</a>.</p>
+    <nav aria-label="Project">
+      <a href="https://github.com/NFMynster/basementbandapp">Source code</a>
+      <a href="https://github.com/NFMynster/basementbandapp/issues">Bug reports and ideas</a>
+      <a href="https://github.com/NFMynster/basementbandapp/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
+    </nav>
+  </footer>
+</body>
+</html>
